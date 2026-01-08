@@ -21,12 +21,12 @@
             align-items: center;
             background-image: url('./bandeira.jpg');
             background-size:cover;
-            background-color: #aca8a863;
+            background-color: #244c978a;
         }
         .conteiner{
             width: 70%;
             height: 85%;
-            background-color: #fafafab7;
+            background-color: #fafafada;
             backdrop-filter: blur(5px);
             border-radius: 6px;
         }
@@ -54,14 +54,19 @@
         #subttle{
             margin-top: 11px;
         }
-        #images-box{
+        .images-box{
             width: 100%;
-            height: 25%;
+            height: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
           
+          .images-box img{
+            width: 100px;
+            height: 100px;  
+            border-radius: 100px; 
+          }
 
         form{
             width: 100%;
@@ -137,8 +142,8 @@
     <div class="conteiner">
         <div class="content">
             
-            <div id="images-box">
-            <img src="#" alt="emblemas">
+            <div class="images-box">
+            <img src="./img/bnd.png" alt="bnd">
             </div>
                 
         <div id="text-box">
@@ -150,7 +155,7 @@
             <input name="nip" type="text" placeholder="Número de Identificação Funcional" required>
             <input name="password" type="password" placeholder="Palavra-Passe" required>
             
-           <div class="links"><a href="#"></a> <a href="#">Ajuda</a></div>
+           <div class="links"><a href="#"></a> <a href="#">Esqueceu a Palavra-Passe?</a></div>
             
             <div id="button-box">
                  <button class="createacount" type="submit">Acessar o Sistema</button>

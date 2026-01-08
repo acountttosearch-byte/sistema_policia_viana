@@ -33,12 +33,17 @@
             z-index: 100;
         }
 
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            color: #0078d4;
-        }
-
+        
+.logo {
+    height: 45px;
+    width: 45px;
+    cursor:pointer;
+}
+ .logo img{
+            width: 100%;
+            height: 100%;  
+            border-radius: 100px; 
+          }
         .search-bar {
             flex: 1;
             display: flex;
@@ -113,6 +118,7 @@
 
         .sidebar ul {
             list-style: none;
+            padding-top: 10px;
         }
 
         .sidebar li {
@@ -392,7 +398,9 @@
 <body>
 
     <header class="header">
-        <div class="logo">Sistema de Gestão da Policia</div>
+        <div class="logo">
+            <img src="../img/bnd.png" alt="bnd">
+        </div>
         <div class="search-bar">
             <input type="text" placeholder="Pesquisa pelo Nº Processo, BI ou passaporte">
             <button id="btnsearch">Pesquisar</button>
@@ -407,13 +415,13 @@
     <div class="main-container">
         <nav class="sidebar">
             <ul>
-                <li data-section="search">Menu</li>
-                <li data-section="queries" class="active">Menu principal</li>
+
+                <li data-section="queries">Início</li>
                 <li data-section="config">Meus Casos</li>
+                <li data-section="defender" class="active">Processos</li>
                 <li data-section="workbooks">Relatorios</li>
                 <li data-section="media">Rigistar Ocorrência</li>
                 <li data-section="threat">Detalhes da Unidade</li>
-                <li data-section="defender">Processos</li>
                 <li data-section="worktools">Configurações Central</li>
             </ul>
         </nav>
@@ -440,28 +448,28 @@
                         <div class="col-templates">Data</div>
                     </div>
                     <div class="table-row" data-item="analytics">
-                        <div class="col col-name">P_Nº1234567890</div>
+                        <div class="col col-name">P_Nº1234565630</div>
                         <div class="col col-file">Corrupção</div>
                         <div class="col col-owner">Em andamento</div>
-                        <div class="col col-templates">20/11/2025</div>
+                        <div class="col col-templates">20/01/2025</div>
                     </div>
                     <div class="table-row" data-item="analytics">
                         <div class="col col-name">P_Nº1234567890</div>
                         <div class="col col-file">Roubo de viaura</div>
-                        <div class="col col-owner">Em andamento</div>
-                        <div class="col col-templates">20/11/2025</div>
-                    </div>
-                    <div class="table-row" data-item="analytics">
-                        <div class="col col-name">P_Nº1234567890</div>
-                        <div class="col col-file">Atentado Terrorista</div>
                         <div class="col col-owner">Arquivado</div>
                         <div class="col col-templates">20/11/2025</div>
                     </div>
                     <div class="table-row" data-item="analytics">
-                        <div class="col col-name">P_Nº1234567890</div>
+                        <div class="col col-name">P_Nº1234560004</div>
+                        <div class="col col-file">Atentado Terrorista</div>
+                        <div class="col col-owner">Arquivado</div>
+                        <div class="col col-templates">12/07/2025</div>
+                    </div>
+                    <div class="table-row" data-item="analytics">
+                        <div class="col col-name">P_Nº1234567121</div>
                         <div class="col col-file">Vandalismo</div>
                         <div class="col col-owner">Na Justiça</div>
-                        <div class="col col-templates">20/11/2025</div>
+                        <div class="col col-templates">05/03/2025</div>
                     </div>
                 </div>
             </div>
@@ -475,7 +483,7 @@
                 <div class="detail-group">
 
                     <div class="detai-text">
-                        Roubo de viatura - Benfica
+                        Roubo de viatura - Viana, Luanda
                     </div>
                 </div>
 

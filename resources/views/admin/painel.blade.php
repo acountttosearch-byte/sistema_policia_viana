@@ -35,10 +35,15 @@ body {
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: #0078d4;
+    height: 45px;
+    width: 45px;
+    cursor:pointer;
 }
+ .logo img{
+            width: 100%;
+            height: 100%;  
+            border-radius: 100px; 
+          }
 
 .search-bar {
     flex: 1;
@@ -437,13 +442,20 @@ button {
     border-radius: 4px;
 }
 
+ 
+          
+         
+
+
     </style>
 </head>
 
 <body>
 
     <header class="header">
-        <div class="logo">Sistema de Investigations</div>
+        <div class="logo">
+            <img src="../img/bnd.png" alt="bnd">
+        </div>
         <div class="search-bar">
             <input type="text" placeholder="Pesquisa pelo Nº Processo, BI ou passaporte">
             <button id="btnsearch">Pesquisar</button>
@@ -477,8 +489,8 @@ button {
                     <h2 class="content-header">Bem-vindo ao Sistema de Investigations</h2>
                     <p class="content-text">Resumo operacional da Polícia Nacional de Angola. Visualize métricas essenciais para monitoramento diário de atividades investigativas.</p>
                     <ul class="summary-list">
-                        <li class="summary-item"><strong>Casos Abertos:</strong> 45</li>
-                        <li class="summary-item"><strong>Usuários Ativos no Sistema:</strong> 28</li>
+                        <li class="summary-item"><strong>Casos Abertos:</strong> 4</li>
+                        <li class="summary-item"><strong>Usuários Ativos no Sistema:</strong> 2</li>
                     </ul>
                     <div class="tabs">
                         <div class="tab active">Resumo Diário</div>
@@ -772,9 +784,6 @@ button {
 
     </div>
 
-    <footer class="footer">
-        <span>&copy; 2025/2026 TI13B</span>
-    </footer>
 
     <!-- Overlay de loading -->
     <div id="loading-overlay">
